@@ -19,7 +19,7 @@ Step 2 : Clone or download this flask repo
 git clone git@github.com:kshyam/flask-with-ibm-db2.git
 ```
 
-Download Zip - https://github.com/kshyam/flask-with-ibm-db2/archive/refs/heads/main.zip
+Download Zip - https://github.com/IBM-EPBL/IBM-Project-33420-1660220018.git
 
 Stpe 3 : Run flask app in debug mode 
 
