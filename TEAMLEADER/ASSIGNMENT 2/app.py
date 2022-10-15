@@ -3,7 +3,7 @@ from flask import Flask, render_template, request, redirect, url_for, session
 from markupsafe import escape
 
 import ibm_db
-conn = ibm_db.connect("DATABASE=<databasename>;HOSTNAME=<your-hostname>;PORT=<portnumber>;SECURITY=SSL;SSLServerCertificate=DigiCertGlobalRootCA.crt;UID=<username>;PWD=<password>",'','')
+conn = ibm_db.connect("DATABASE=blub;HOSTNAME=55fbc997-9266-4331-afd3-888b05e734c0.bs2io90l08kqb1od8lcg.databases.appdomain.cloud:30182;PORT=5000;SECURITY=SSL;SSLServerCertificate=DigiCertGlobalRootCA.crt;UID=hsh73977;PWD=dHtZTQSeZ2df9Cjf",'','')
 
 app = Flask(__name__)
 
@@ -52,7 +52,7 @@ def list():
   stmt = ibm_db.exec_immediate(conn, sql)
   dictionary = ibm_db.fetch_both(stmt)
   while dictionary != False:
-    # print ("The Name is : ",  dictionary)
+
     students.append(dictionary)
     dictionary = ibm_db.fetch_both(stmt)
 
@@ -82,23 +82,5 @@ def delete(name):
       return render_template("list.html", students = students, msg="Delete successfully")
 
 
-  
-  # # while student != False:
-  # #   print ("The Name is : ",  student)
 
-  # print(student)
   return "success..."
-
-# @app.route('/posts/edit/<int:id>', methods=['GET', 'POST'])
-# def edit(id):
-    
-#     post = BlogPost.query.get_or_404(id)
-
-#     if request.method == 'POST':
-#         post.title = request.form['title']
-#         post.author = request.form['author']
-#         post.content = request.form['content']
-#         db.session.commit()
-#         return redirect('/posts')
-#     else:
-#         return render_template('edit.html', post=post)
