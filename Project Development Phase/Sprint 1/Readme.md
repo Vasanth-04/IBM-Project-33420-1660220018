@@ -1,6 +1,7 @@
-Sprint 1️⃣
-Flask project is created
+# Sprint 1️⃣
 
-All the routes for the project is added
+    Flask project is created
 
-Corresponding IBM DB tables are created
+    All the routes for the project is added
+
+    Corresponding IBM DB tables are created
