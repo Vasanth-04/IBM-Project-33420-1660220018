@@ -5,9 +5,9 @@ from email.mime.base import MIMEBase
 
 
 def alert(main_msg):
-   mail_from = '19i361@psgtech.ac.in'
+   mail_from = 'ucs19430@rmd.ac.in'
 
-   mail_to = '19i303@psgtech.ac.in'
+   mail_to = 'vethanathanvk@gmail.com'
 
    msg = MIMEMultipart()
    msg['From'] = mail_from
@@ -19,7 +19,7 @@ def alert(main_msg):
    try:
       server = smtplib.SMTP_SSL('smtp.sendgrid.net', 465)
       server.ehlo()
-      server.login('apikey', 'API_KEY')
+      server.login('apikey', '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')
       server.sendmail(mail_from, mail_to, msg.as_string())
       server.close()
       print("mail sent")
