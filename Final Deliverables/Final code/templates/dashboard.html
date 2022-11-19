@@ -1,6 +1,14 @@
 {% extends 'layout.html' %}
 
 {% block body %}
+    <style>
+    body {
+      background-image: url('https://chat-bot-for-hospital.s3.jp-tok.cloud-object-storage.appdomain.cloud/abstract-blur-pastel-beautiful-peach-pink-color-sky-warm-tone-background-design-as-banner-slide-show-others_1258-63789.webp');
+    }
+    
+    
+
+    </style><br><br>
      <h1>Dashboard <small>Welcome {{session.username}}</small></h1>
      <hr>
        {% for location in locations %}

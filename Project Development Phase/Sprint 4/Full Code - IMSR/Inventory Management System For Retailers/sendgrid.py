@@ -18,7 +18,7 @@ def alert(main_msg):
       server.ehlo()
       server.login('apikey', 'API_KEY')
       server.sendmail(mail_from, mail_to, msg.as_string())
-      server.close()
+      server.close() 
       print("Mail sent successfully!")
    except:
       print("Some Issue, Mail not Sent :(")

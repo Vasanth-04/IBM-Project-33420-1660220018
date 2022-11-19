@@ -1,4 +1,4 @@
-  FROM python:2.7
+  FROM python:3.10.8
   LABEL maintainer="vethanathan VK, vethanathanvk@gmail.com"
   RUN apt-get update
   RUN mkdir /app
