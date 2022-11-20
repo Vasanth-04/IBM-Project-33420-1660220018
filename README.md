@@ -24,4 +24,6 @@
 ![image](https://user-images.githubusercontent.com/58129139/195348700-32eeae02-ac88-4f70-924a-0bf31e758523.png)
 
 
+click here for the deployment  : http://169.51.200.212:32248/
+
 Click here to watch the video   :   https://drive.google.com/file/d/1jRxI9auXeUBfIzRVz9bR1T3OMkXT-e9W/view?usp=sharing
